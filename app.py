@@ -5,7 +5,7 @@ st.title('Natural Language Processing Overview')
 
 
 
-topic = st.sidebar.selectbox('Tasks',('Select a task', 'Part of Speech Tagging',  'Dependency Parsing', 'Named Entity Recognition', 'Textual Entailment', 'Text Classification', 'Text Similarity','Sentiment Analysis', 'Ranking', 'Question Answering', 'Machine Translation', 'Automatic Summarization', 'Dialogue System', 'Recommendation System']
+task = st.sidebar.selectbox('Tasks',('Select a task', 'Part of Speech Tagging',  'Dependency Parsing', 'Named Entity Recognition', 'Textual Entailment', 'Text Classification', 'Text Similarity','Sentiment Analysis', 'Ranking', 'Question Answering', 'Machine Translation', 'Automatic Summarization', 'Dialogue System', 'Recommendation System']
 
 
 
