@@ -8,9 +8,6 @@ if 'option' not in st.session_state:
 	st.session_state.option = ''
 
 
-def write_input(text):
-	st.session_state.input = text
-	
 	
 	
 st.title('Chatbot Test')
@@ -43,8 +40,8 @@ if response is not None:
       options =[]
       for button in res['buttons']:
         options.append(button['title'])        
-      option = st.radio('', options)
-      st.session_state.input = res['buttons'][options.index(option)]['payload']
+      option = st.radio('', options, key='input')
+      #st.session_state.input = res['buttons'][options.index(option)]['payload']
 	
      
 
