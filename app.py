@@ -20,7 +20,7 @@ input = st.text_input('Type your message here', st.session_state.input)
 
 response = requests.post(URL, json={"sender":"Andrew", "message":input})
 
-st.session_state.input = None
+st.session_state.input = ''
 
 st.write(st.session_state.option)
 
@@ -38,6 +38,7 @@ if response is not None:
         options.append(button['title'])        
       option = st.radio('', options , key='option')
       st.session_state.input = res['buttons'][options.index(option)]['payload']
+     
 
      
 
