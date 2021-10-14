@@ -9,7 +9,8 @@ URL = 'http://35.236.187.220:8080/webhooks/rest/webhook'
 input = st.text_input('Type your message here', 'Hi')
 
 def call_rasa(msg):
-  return response = requests.post(URL, json={"sender":"Andrew", "message":msg})
+  response = requests.post(URL, json={"sender":"Andrew", "message":msg})
+  return repsonse
 
 response = call_rasa(input)
 
