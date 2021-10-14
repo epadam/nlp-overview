@@ -14,6 +14,8 @@ if response is not None:
   json_response = response.json()
   for res in json_response:
     st.markdown(res['text'])
-    if res['image']:
+    if 'image' in res:
       st.image(res['image'])
+    if 'buttons' in res:
+      st.radio( res['text'], ('Comedy', 'Drama', 'Documentary'))
   st.write(json_response)
