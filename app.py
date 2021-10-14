@@ -17,5 +17,8 @@ if response is not None:
     if 'image' in res:
       st.image(res['image'])
     if 'buttons' in res:
-      st.radio( res['text'], ('Comedy', 'Drama', 'Documentary'))
+      options =[]
+      for button, idx in enumerate(res['buttons']):
+        options.append(button['title'])        
+      option = st.radio('', options)
   st.write(json_response)
