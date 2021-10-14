@@ -10,7 +10,7 @@ input = st.text_input('Type your message here', 'Hi', key="input")
 
 def call_rasa(msg):
   response = requests.post(URL, json={"sender":"Andrew", "message":msg})
-  return repsonse
+  return response
 
 response = call_rasa(input)
 
