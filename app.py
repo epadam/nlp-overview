@@ -12,13 +12,16 @@ response = requests.post(URL, json={"sender":"Andrew", "message":input})
 st.subheader('Rasa Response')
 if response is not None:
   json_response = response.json()
+  st.write(json_response)
   for res in json_response:
     st.markdown(res['text'])
     if 'image' in res:
       st.image(res['image'])
     if 'buttons' in res:
       options =[]
-      for button, idx in enumerate(res['buttons']):
+      for idx,  button in enumerate(res['buttons']):
         options.append(button['title'])        
       option = st.radio('', options)
-  st.write(json_response)
+      #response = requests.post(URL, json={"sender":"Andrew", "message":res['buttons'][idx]['payload']})
+
+  
