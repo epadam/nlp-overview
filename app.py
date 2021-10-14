@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 if 'input' not in st.session_state:
-	st.session_state.input = Hi
+	st.session_state.input = 'Hi'
 
 if 'option' not in st.session_state:
 	st.session_state.option = 0
