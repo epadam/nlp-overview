@@ -4,6 +4,9 @@ import requests
 if 'input' not in st.session_state:
 	st.session_state.input = None
 
+if 'option' not in st.session_state:
+	st.session_state.option = 0
+
 
 st.title('Chatbot Test')
 
