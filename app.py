@@ -14,4 +14,4 @@ if response is not None:
   json_response = response.json()
   st.write('Response')
   st.write(json_response)
-  st.text(json_response.text)
+  st.text(json_response[0].text)
