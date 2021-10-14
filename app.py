@@ -12,6 +12,5 @@ response = requests.post(URL, json={"sender":"Andrew", "message":input})
 st.subheader('Rasa Response')
 if response is not None:
   json_response = response.json()
-  st.write('Response')
   st.markdown(json_response[0]['text'])
   st.write(json_response)
