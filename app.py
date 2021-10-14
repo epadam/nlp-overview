@@ -17,7 +17,7 @@ def call_rasa(msg):
   response = requests.post(URL, json={"sender":"Andrew", "message":msg})
   return response
 
-response = call_rasa(input)
+response = call_rasa(st.session_state.input)
 
 st.subheader('Rasa Response')
 if response is not None:
