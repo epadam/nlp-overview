@@ -6,7 +6,7 @@ st.title('Chatbot Test')
 
 URL = 'http://35.236.187.220:8080/webhooks/rest/webhook'
 
-input = st.text_input('Type your message here')
+input = st.text_input('Type your message here', 'Hi')
 
 response = requests.post(URL, json={"sender":"Andrew", "message":input})
 st.subheader('Rasa Response')
