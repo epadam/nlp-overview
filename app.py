@@ -12,8 +12,8 @@ response = requests.post(URL, json={"sender":"Andrew", "message":input})
 st.subheader('Rasa Response')
 if response is not None:
   json_response = response.json()
-  for i in json_response:
-    st.markdown(json_response[i]['text'])
-    if json_response[i]['image'] is not None:
-      st.image(json_response[i]['image'])
+  for res in json_response:
+    st.markdown(res['text'])
+    if res['image'] is not None:
+      st.image(res['image'])
   st.write(json_response)
