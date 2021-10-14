@@ -14,6 +14,6 @@ if response is not None:
   json_response = response.json()
   for res in json_response:
     st.markdown(res['text'])
-    if res['image'] is not None:
+    if res['image']:
       st.image(res['image'])
   st.write(json_response)
