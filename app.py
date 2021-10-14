@@ -32,7 +32,7 @@ if response is not None:
       options =[]
       for button in res['buttons']:
         options.append(button['title'])        
-      option = st.radio('', options, )
+      option = st.radio('', options , key='options')
       st.session_state.input = res['buttons'][options.index(option)]['payload']
 
       #input = res['buttons'][options.index(option)]['payload']
