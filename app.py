@@ -5,9 +5,14 @@ if 'input' not in st.session_state:
 	st.session_state.input = 'Hi'
 
 if 'option' not in st.session_state:
-	st.session_state.option = 0
+	st.session_state.option = ''
 
 
+def write_input(text):
+	st.session_state.input = text
+	
+	
+	
 st.title('Chatbot Test')
 
 URL = 'http://35.236.187.220:8080/webhooks/rest/webhook'
@@ -20,7 +25,9 @@ input = st.text_input('Type your message here', st.session_state.input)
 
 response = requests.post(URL, json={"sender":"Andrew", "message":input})
 
-st.session_state.input = ''
+#st.session_state.input = ''
+
+
 
 st.write(st.session_state.option)
 
@@ -36,8 +43,8 @@ if response is not None:
       options =[]
       for button in res['buttons']:
         options.append(button['title'])        
-      option = st.radio('', options , key='option')
-      st.session_state.input = res['buttons'][options.index(option)]['payload']
+      option = st.radio('', options , key='option', on_change=write_input(res['buttons'][options.index(option)]['payload']))
+      #st.session_state.input = res['buttons'][options.index(option)]['payload']
      
 
      
