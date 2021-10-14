@@ -8,7 +8,7 @@ URL = 'http://35.236.187.220:8080/webhooks/rest/webhook'
 
 input = st.text_input('input')
 
-response = requests.post(URL, params={"sender":"Andrew", "message":"Hello"})
+response = requests.post(URL, json={"sender":"Andrew", "message":"Hello"})
 st.write(response)
 #if response is not None:
 #  json_response = response.json()
