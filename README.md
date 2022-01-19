@@ -331,13 +331,7 @@ For more sentiment dataset please check:
 
 ### Sentence Segmentation
 
-### Reading Comprehension
 
-Squad 2.0
-
-* [RNN for SQuAD](notebooks/nlp/reading-comprehension/Squad_RNN.ipynb)
-
-* [GPT-2 for SQuAD2.0](https://medium.com/analytics-vidhya/an-ai-that-does-your-homework-e5fa40c43d17)
 
 ### Extractive Summarization
 
@@ -351,7 +345,7 @@ There are mainly two ways:
   * Input both text into the model.
   * Generate embedding for both text and calculate cosine for both.
 
-#### Paraphrase Indentification
+### Paraphrase Indentification
 
 
 * [RNN for ](notebooks/nlp/paraphrase-identification/QQP_RNN.ipynb)
@@ -360,18 +354,28 @@ There are mainly two ways:
 
 * Dual BERT
 
-* QQP Classification with Siamese Bert (Sentenc Transformer)
+* QQP Classification with Siamese Bert (Sentence Transformer)
 
 * Dataset:
   * PAWS: Paraphrase Adversaries from Word Scrambling [`github`](https://github.com/google-research-datasets/paws)
 
-#### Information Retrieval (Including Semantic Search and Question Answering)
+### Reading Comprehension
+
+Reading Comprehension can be seen as subtask of Question Answering. It tries to find the answers in one or multiple articles. 
+
+* [RNN for SQuAD](notebooks/nlp/reading-comprehension/Squad_RNN.ipynb)
+
+* [GPT-2 for SQuAD2.0](https://medium.com/analytics-vidhya/an-ai-that-does-your-homework-e5fa40c43d17)
+
+
+### Information Retrieval and Question Answering
 
 Information Retrieval is gradually relying on semantic understanding these days instead of rules, where user can search information in a question format not just keywords.
+When the query is a question, it is basically Question Answering.
 
 There are actually many types of question answering:
 
-* Classification Question Answering:
+* Classification type of Question Answering:
   One model to trained with all data
 
   * [Bert for FAQ](notebooks/nlp/question-answering/Bert_FAQ.ipynb)
@@ -384,16 +388,26 @@ There are actually many types of question answering:
     * BM25 
     * Text Embedding: Use [Sentence Transformers](https://github.com/UKPLab/sentence-transformers) to encode the documents once and can be used for similarity comparison later.
 
-  * Ranking or Answer Finding:
+  * Ranking:
      * Use Bert/Sentence-Transformer to re-rank the retrieving documents.
+     
+  
+  * Answering:
+     This is exactly a reading comprehension task which trying to find answers from retrieved articles.
      * QA Bert to find exact answer in the document. 
+     
   * Answer Generation:
      * RAG
-     
   
   * Examples:
     * [Bert for covid](notebooks/nlp/question-answering/covid_Bert.ipynb)
     * [Bert for openQA](notebooks/nlp/question-answering/openQA_Bert.ipynb)
+
+* Multi-hop Question Answering/Information Retrieval
+    *  
+
+
+
 
 Tools:
 
