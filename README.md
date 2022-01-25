@@ -413,7 +413,7 @@ Tools:
 
 * [Facebook RAG](https://ai.facebook.com/blog/retrieval-augmented-generation-streamlining-the-creation-of-intelligent-natural-language-processing-models/): Trandformer Style Retrieval Augmented Generation. Models are available on HuggingFace.
 
-* [Hystack](https://github.com/deepset-ai/haystack): Retriever(Elasticsearch, SQL, in memory, FAISS) and Reader(Bert, RobertA, etct) based search system. Check the Demo. 
+* [Haystack](https://github.com/deepset-ai/haystack): Retriever(Elasticsearch, SQL, in memory, FAISS) and Reader(Bert, RobertA, etct) based search system. Check the Demo. 
 
 
 One application of these pretrained models are as follows:
