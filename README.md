@@ -20,10 +20,9 @@ Enjoy!!
 </ul>
 
 
+Language models take the text as input and generate a prediction, a word, a sentence or even an article. 
 
 # Language Models
-
-Language models take the text as input and generate a prediction, a word, a sentence or even an article. 
 
 - [Tokenization](#Tokenization)
 - [Statistical Language Models](#Statistical-Language-Models)
@@ -41,6 +40,34 @@ Language models take the text as input and generate a prediction, a word, a sent
     - [Encoder](#Encoder)
     - [Decoder](#Decoder)
 
+# NLP Tasks
+
+- [Sequence Tagging](#Sequence-Tagging)
+   - [Part-of-speech Tagging](#Part-of-speech-Tagging)
+   - [Named Entity Recognition](#Named-Entity-Recognition)
+   - [Dependency Parsing](#Dependency-Parsing)
+   - [Relation Extraction](#Relation-Extraction)
+   - [Grammer correction](#Grammer-correction)
+- [Sentence/Paragraph/Document Level Tasks](#Sentence/Paragrah/Document-Level-Tasks)
+  - [Classification Tasks](#Classification-tasks)
+    - [Sentiment Analysis](#Sentiment-Analysis)
+    - [Ducument Classification](#Ducument-Classification)
+    - [Textual Entailment/Natural Language Inference](#Textual-Entailment/Natural-Language-Inference)
+    - [Sentence Segmentation](#Sentence-Segmentation)
+    - [Paraphrase indentification](#Paraphrase-indentification)
+    - [Reading Comprehension](#reading-comprehension)
+    - [Extractive Summarization](#Extractive-Summarization)
+    - [Text Matching/Semantic Similarity](#Text-Matching/Semantic-Similarity)
+      - [Information Retrieval](#information-retrieval)
+      - [Question Anwsering](#question-answering)
+   - [Natural Language Generation](#natural-language-generation)
+     - [Machine Translation](#Machine-Translation)
+     - [Abstractive Summarization](#Abstractive-Summarization)
+     - [Paraphrase Generation](#Paraphrase-Generation)
+     - [Data to Text Generation](#Data-to-Text-Generation)
+     - [Code Generation](#Code-Generation)
+
+# Language Models
 
 ## Tokenization
 
@@ -200,30 +227,7 @@ More Resources:
 
 # NLP Tasks
 
-- [Sequence Tagging](#Sequence-Tagging)
-   - [Part-of-speech Tagging](#Part-of-speech-Tagging)
-   - [Named Entity Recognition](#Named-Entity-Recognition)
-   - [Dependency Parsing](#Dependency-Parsing)
-   - [Relation Extraction](#Relation-Extraction)
-   - [Grammer correction](#Grammer-correction)
-- [Sentence/Paragraph/Document Level Tasks](#Sentence/Paragrah/Document-Level-Tasks)
-  - [Classification Tasks](#Classification-tasks)
-    - [Sentiment Analysis](#Sentiment-Analysis)
-    - [Ducument Classification](#Ducument-Classification)
-    - [Textual Entailment/Natural Language Inference](#Textual-Entailment/Natural-Language-Inference)
-    - [Sentence Segmentation](#Sentence-Segmentation)
-    - [Paraphrase indentification](#Paraphrase-indentification)
-    - [Reading Comprehension](#reading-comprehension)
-    - [Extractive Summarization](#Extractive-Summarization)
-    - [Text Matching/Semantic Similarity](#Text-Matching/Semantic-Similarity)
-      - [Information Retrieval](#information-retrieval)
-      - [Question Anwsering](#question-answering)
-   - [Natural Language Generation](#natural-language-generation)
-     - [Machine Translation](#Machine-Translation)
-     - [Abstractive Summarization](#Abstractive-Summarization)
-     - [Paraphrase Generation](#Paraphrase-Generation)
-     - [Data to Text Generation](#Data-to-Text-Generation)
-     - [Code Generation](#Code-Generation)
+
 
  
 
