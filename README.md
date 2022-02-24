@@ -222,7 +222,8 @@ More Resources:
      - [Machine Translation](#Machine-Translation)
      - [Abstractive Summarization](#Abstractive-Summarization)
      - [Paraphrase Generation](#Paraphrase-Generation)
-     - [Code-Generation](#Code-Generation)
+     - [Data to Text Generation](#Data-to-Text-Generation)
+     - [Code Generation](#Code-Generation)
 
  
 
@@ -454,7 +455,7 @@ more research can be found here
 
 * [T5 for paraphrase_generation_fine-tune with QQP](notebooks/nlp/natural-language-generation/paraphrase-generation/T5_small_qqp_paraphrase_generation.ipynb)
 
-## Data to Text Generation
+### Data to Text Generation
 
 * [WebNLG Challenge 2020]()
 
