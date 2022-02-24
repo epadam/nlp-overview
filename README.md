@@ -67,8 +67,6 @@ Language models take the text as input and generate a prediction, a word, a sent
      - [Data to Text Generation](#Data-to-Text-Generation)
      - [Code Generation](#Code-Generation)
 
-# Language Models
-
 ## Tokenization
 
 Vocab:
@@ -225,11 +223,6 @@ More Resources:
 * [Chinese GPT-2](https://github.com/imcaspar/gpt2-ml) 
 
 
-# NLP Tasks
-
-
-
- 
 
 The goal of all NLP tasks is to understand the text(each word, relation between words, sentiment or the topic) and generate the text we want. The tasks below try to understand the text from word level, sentence level and document level. 
 
