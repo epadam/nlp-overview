@@ -373,8 +373,13 @@ When the query is a question, it is basically Question Answering.
 
 There are actually many types of question answering:
 
-* Classification type of Question Answering:
-  One model to trained with all data
+* Simple Question Answering:
+  
+  
+  * Classification type
+     * One model to trained with all data
+  * FAQ
+     * Match QQ and return A 
 
   * [Bert for FAQ](notebooks/nlp/question-answering/Bert_FAQ.ipynb)
    
@@ -394,7 +399,7 @@ There are actually many types of question answering:
      This is exactly a reading comprehension task which trying to find answers from retrieved articles.
      * QA Bert to find exact answer in the document. 
      
-  * Answer Generation:
+  * Generation:
      * RAG
   
   * Examples:
