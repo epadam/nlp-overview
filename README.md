@@ -385,6 +385,8 @@ There are actually many types of question answering:
  
 
 * Close/Open Domain Question Answering:
+  
+  The following components can be used combined or separately
    
   * Retrieve
     * TF-IDF
