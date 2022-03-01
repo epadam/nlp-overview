@@ -13,9 +13,10 @@ A standard pipeline of chatbot is showing below. There are also research on end-
 ## Open/Close Domain Chatbot
 
 A. QA Chatbot (Doesn't need chatbot framework)
-1. Reading Comprehension Chatbot (single Documents)
+1. Reading Comprehension Chatbot (single Document)
 2. Retrieve -> Reader (multiple Documents, can also be multi-hop) 
 3. Knowlege Graph (NER -> KG -> Generator)
+4. End-to-End
 
 B. Multi-Turn Chatbot
 
