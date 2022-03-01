@@ -5,16 +5,24 @@ It can be simple Q&A chatbot, task specific cahtbot to open domain chatbot or al
 
 A standard pipeline of chatbot is showing below. There are also research on end-to-end chatbot, however, it is harder to control currently. 
 
-## Classfication Q&A Chatbot
+## Classfication FAQ Chatbot (Data in the training dataset)
 
+1. simple classification
+2. QQ pair and return Answer
 
-## Open Domain Chatbot
+## Open/Close Domain Chatbot
+
+A. QA Chatbot (Doesn't need chatbot framework)
+1. Reading Comprehension Chatbot (single Documents)
+2. Retrieve -> Reader (multiple Documents, can also be multi-hop) 
+3. Knowlege Graph (NER -> KG -> Generator)
+
+B. Multi-Turn Chatbot
 
 * [Comparison of Transfer-Learning Approaches for Response Selection in Multi-Turn Conversations](http://workshop.colips.org/dstc7/papers/17.pdf)
 
 * [Towards a Conversational Agent that Can Chat About…Anything](https://ai.googleblog.com/2020/01/towards-conversational-agent-that-can.html)
 
-Demo
 
 ## Task Oriented Chatbot 
 
@@ -28,6 +36,8 @@ It requires NLU, which include intent extraction, Name Entity Recognition, Relat
 
 
 ### Dialog State Tracking
+
+This component store chat history, NER and the slot
 
 ### Dialog Policy
 
