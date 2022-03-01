@@ -569,3 +569,9 @@ You can choose the library based on which framework they are using(tensorflow, p
 ### Reinforcement Learning for NLP 
 
 #### Imitation Learning for NLP
+
+## Reference
+
+https://github.com/EagleW/PaperRobot
+
+https://github.com/facebookresearch/DrQA
