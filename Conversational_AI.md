@@ -3,14 +3,14 @@
 Chatbot is probably the most challenging application in NLP. It requires almost all tasks above to give smooth communicating experience.
 It can be simple Q&A chatbot, task specific cahtbot to open domain chatbot or all-in-one chatbot. 
 
-A standard pipeline of chatbot is showing below. There are also research on end-to-end chatbot, however, it is harder to control currently. 
-
 ## Classfication FAQ Chatbot (Data in the training dataset)
 
-1. simple classification
+1. Simple classification
 2. QQ pair and return Answer
 
-## Open/Close Domain Chatbot
+## Open/Close Domain Chatbot (Information Retrieval)
+
+For this kind of chatbot, you don't really need chatbot framework since there's no intention. Haystack with input
 
 A. QA Chatbot (Doesn't need chatbot framework)
 1. Reading Comprehension Chatbot (single Document)
@@ -25,7 +25,11 @@ B. Multi-Turn Chatbot
 * [Towards a Conversational Agent that Can Chat About…Anything](https://ai.googleblog.com/2020/01/towards-conversational-agent-that-can.html)
 
 
-## Task Oriented Chatbot 
+## Task Oriented/Mutli-task Chatbot 
+
+If you need a task oriented chatbot or a multiple functions chatbot including FQA, chitchat, then you need a chatbot framework to recognize the intention first
+
+It's also possible for rasa to train the model end-to-end without NLU.
 
 ### NLU
 
@@ -43,3 +47,5 @@ This component store chat history, NER and the slot
 ### Dialog Policy
 
 * [TEDpolicy](https://github.com/RasaHQ/rasa/blob/main/rasa/core/policies/ted_policy.py)
+
+### NLG
