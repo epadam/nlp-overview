@@ -45,7 +45,7 @@ Language models take the text as input and generate a prediction, a word, a sent
 - [Sequence Tagging](#Sequence-Tagging)
    - [Part-of-speech Tagging](#Part-of-speech-Tagging)
    - [Named Entity Recognition](#Named-Entity-Recognition)
-   - [Entity Linking](#Entity Linking)
+   - [Entity Linking](#Entity-Linking)
    - [Dependency Parsing](#Dependency-Parsing)
    - [Relation Extraction](#Relation-Extraction)
    - [Grammer correction](#Grammer-correction)
@@ -238,14 +238,9 @@ Let's use this [Penn Treebank Dataset](https://deepai.org/dataset/penn-treebank)
 * [Spacy and_RNN for ](notebooks/nlp/part-of-speech-tagging/Spacy_POS_RNN.ipynb)
 
 
-### Grammer correction
-
-* [LSTM for Cola](notebooks/nlp/grammer-classification/Cola_LSTM.ipynb)
-
-
 ### Named Entity Recognition 
 
-NER is very useful for chatbot or building or querying knowledge graph.
+NER is very useful for chatbot or building or querying knowledge graph. It is also used in chatbot.
 
 * [RNN for_NER](notebooks/nlp/name-entity-recognition/NER_RNN.ipynb)
 
@@ -257,18 +252,26 @@ More dataset please check below:
 
 ### Entity Linking
 
+It is used for querying Knowledge graph.
+
 * [RNN for ](notebooks/nlp/DP_RNN.ipynb)
 
 ### Dependency Parsing
+
+Can also be used for grammer analysis or coreferencing
 
 * [RNN for ](notebooks/nlp/DP_RNN.ipynb)
 
 
 ### Relation Extraction
 
+Can be used for building/Querying knowledge graph
+
 * [RNN for ](notebooks/nlp/RE_RNN.ipynb)
 
+### Grammer correction
 
+* [LSTM for Cola](notebooks/nlp/grammer-classification/Cola_LSTM.ipynb)
 
 ## Sentence/Paragraph/Document Level Tasks
 
@@ -304,7 +307,7 @@ For more sentiment dataset please check:
 * IMDB Movie Review
 
 
-### Document Classification
+### Document Type Classification
 
 * Clustering (PCA)
 
