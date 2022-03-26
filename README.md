@@ -45,6 +45,7 @@ Language models take the text as input and generate a prediction, a word, a sent
 - [Sequence Tagging](#Sequence-Tagging)
    - [Part-of-speech Tagging](#Part-of-speech-Tagging)
    - [Named Entity Recognition](#Named-Entity-Recognition)
+   - [Entity Linking](#Entity Linking)
    - [Dependency Parsing](#Dependency-Parsing)
    - [Relation Extraction](#Relation-Extraction)
    - [Grammer correction](#Grammer-correction)
@@ -253,6 +254,10 @@ NER is very useful for chatbot or building or querying knowledge graph.
 More dataset please check below:
 
 * [https://github.com/juand-r/entity-recognition-datasets](https://github.com/juand-r/entity-recognition-datasets)
+
+### Entity Linking
+
+* [RNN for ](notebooks/nlp/DP_RNN.ipynb)
 
 ### Dependency Parsing
 
